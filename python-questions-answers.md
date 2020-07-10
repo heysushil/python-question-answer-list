@@ -8,7 +8,153 @@
 
 ## List questions:
 
+1. Given a Python list you should be able to display Python list in the following order
 
+                aList = [100, 200, 300, 400, 500]
+                aList = aList[::-1]
+                print(aList)
+
+1. Concatenate two lists index-wise
+
+> Note: We need to use list comprehension and zip() function as follows
+                list1 = ["M", "na", "i", "Ke"] 
+                list2 = ["y", "me", "s", "lly"]
+                list3 = [i + j for i, j in zip(list1, list2)]
+                print(list3)
+
+1. Given a Python list. Turn every item of a list into its square
+
+                aList = [1, 2, 3, 4, 5, 6, 7]
+                aList =  [x * x for x in aList]
+                print(aList)
+
+1. Concatenate two lists in the following order
+
+                list1 = ["Hello ", "take "]
+                list2 = ["Dear", "Sir"]
+
+                resList = [x+y for x in list1 for y in list2]
+                print(resList)
+
+1. Given a two Python list. Iterate both lists simultaneously such that list1 should display item in original order and list2 in reverse order
+
+                list1 = [10, 20, 30, 40]
+                list2 = [100, 200, 300, 400]
+
+                for x, y in zip(list1, list2[::-1]):
+                print(x, y)
+
+1. Remove empty strings from the list of strings
+
+>Note: We can use a filter() function to remove None type from the list
+
+                list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+                resList = list(filter(None, list1))
+                print(resList)
+
+1. Add item 7000 after 6000 in the following Python List
+
+> Note: Use the append() method
+
+                list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+                list1[2][2].append(7000)
+                print(list1)        
+
+1. Given a nested list extend it with adding sub list ["h", "i", "j"] in a such a way that it will look like the following list
+Given List:
+
+                list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+                subList = ["h", "i", "j"]
+
+                list1[2][1][2].extend(subList)
+                print(list1)
+
+1. Given a Python list, find value 20 in the list, and if it is present, replace it with 200. Only update the first occurrence of a value
+
+                list1 = [5, 10, 15, 20, 25, 50, 20]
+
+                index = list1.index(20)
+                list1[index] = 200
+                print(list1)
+
+1. Given a Python list, remove all occurrence of 20 from the list
+
+> Note: Use the list comprehension
+
+                list1 = [5, 20, 15, 20, 25, 50, 20]
+
+                def removeValue(sampleList, val):
+                return [value for value in sampleList if value != val]
+                resList = removeValue(list1, 20)
+                print(resList)        
+
+## Python Tuple Exercise
+
+1. Reverse the following tuple
+
+                aTuple = (10, 20, 30, 40, 50)
+                aTuple = aTuple[::-1]
+                print(aTuple)
+
+1. Access value 20 from the following tuple
+
+                aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+                print(aTuple[1][1])
+
+1. Create a tuple with single item 50
+
+                aTuple = (50, )
+                print(aTuple)
+
+> Note: If you want to create a single value tuple, you must indicate it by adding a comma just before the closing parentheses.
+
+1. Unpack the following tuple into 4 variables
+
+                aTuple = (10, 20, 30, 40)
+                a, b, c, d = aTuple
+                print(a)
+                print(b)
+                print(c)
+                print(d)
+
+1. Swap the following two tuples
+
+                tuple1 = (11, 22)
+                tuple2 = (99, 88)
+                tuple1, tuple2 = tuple2, tuple1
+                print(tuple2)
+                print(tuple1)
+
+1. Copy element 44 and 55 from the following tuple into a new tuple
+
+                tuple1 = (11, 22, 33, 44, 55, 66)
+                tuple2 = tuple1[3:-1]
+                print(tuple2)
+
+1. Modify the first item (22) of a list inside a following tuple to 222
+
+                tuple1 = (11, [22, 33], 44, 55)
+                tuple1[1][0] = 222
+                print(tuple1)
+
+1. Sort a tuple of tuples by 2nd item
+
+                tuple1 = (('a', 23),('b', 37),('c', 11), ('d',29))
+                tuple1 = tuple(sorted(list(tuple1), key=lambda x: x[1]))
+                print(tuple1)
+
+1. Counts the number of occurrences of item 50 from a tuple
+
+                tuple1 = (50, 10, 60, 70, 50)
+                print(tuple1.count(50))
+
+1. Check if all items in the following tuple are the same
+
+                def check(sampleTuple):
+                return all(i == sampleTuple[0] for i in sampleTuple)
+
+                tuple1 = (45, 45, 45, 45)
+                print(check(tuple1))
 
 ## Dictionary related answers
 

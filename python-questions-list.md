@@ -6,7 +6,176 @@
 
 ## List questions:
 
+1. Given a Python list you should be able to display Python list in the following order
 
+        aLsit = [100, 200, 300, 400, 500]
+        Expected output:
+
+        [500, 400, 300, 200, 100]
+
+1. Concatenate two lists index-wise
+
+    list1 = ["M", "na", "i", "Ke"] 
+    list2 = ["y", "me", "s", "lly"]
+
+        Expected output:
+
+        ['My', 'name', 'is', 'Kelly']
+
+1. Given a Python list. Turn every item of a list into its square
+
+    aList = [1, 2, 3, 4, 5, 6, 7]
+
+        Expected output:
+
+        [1, 4, 9, 16, 25, 36, 49]
+
+1. Concatenate two lists in the following order
+
+    list1 = ["Hello ", "take "]
+    list2 = ["Dear", "Sir"]
+
+        Expected output:
+
+        ['Hello Dear', 'Hello Sir', 'take Dear', 'take Sir']
+
+1. Given a two Python list. Iterate both lists simultaneously such that list1 should display item in original order and list2 in reverse order
+
+    list1 = [10, 20, 30, 40]
+    list2 = [100, 200, 300, 400]
+
+        Expected output:
+
+        10 400
+        20 300
+        30 200
+        40 100
+
+1. Remove empty strings from the list of strings
+
+    list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
+
+        Expected output:
+
+        ["Mike", "Emma", "Kelly", "Brad"]
+
+1. Add item 7000 after 6000 in the following Python List
+
+    list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
+
+        Expected output:
+
+        [10, 20, [300, 400, [5000, 6000, 7000], 500], 30, 40]
+
+1. Given a nested list extend it with adding sub list ["h", "i", "j"] in a such a way that it will look like the following list
+Given List:
+
+    list1 = ["a", "b", ["c", ["d", "e", ["f", "g"], "k"], "l"], "m", "n"]
+    Sub List to be added = ["h", "i", "j"]
+
+        Expected output:
+
+        ['a', 'b', ['c', ['d', 'e', ['f', 'g', 'h', 'i', 'j'], 'k'], 'l'], 'm', 'n']
+
+1. Given a Python list, find value 20 in the list, and if it is present, replace it with 200. Only update the first occurrence of a value
+
+    list1 = [5, 10, 15, 20, 25, 50, 20]
+
+        Expected output:
+
+        list1 = [5, 10, 15, 200, 25, 50, 20]
+
+1. Given a Python list, remove all occurrence of 20 from the list
+
+    list1 = [5, 20, 15, 20, 25, 50, 20]
+
+        Expected output:
+
+        [5, 15, 25, 50]
+
+
+## Python Tuple Exercise
+
+1. Reverse the following tuple
+    
+    aTuple = (10, 20, 30, 40, 50)
+
+        Expected output:
+
+        (50, 40, 30, 20, 10)
+
+1. Access value 20 from the following tuple
+    
+    aTuple = ("Orange", [10, 20, 30], (5, 15, 25))
+
+        Expected output:
+
+        20
+
+1. Create a tuple with single item 50
+
+1. Unpack the following tuple into 4 variables
+    
+    aTuple = (10, 20, 30, 40)
+
+        Expected output:
+
+        aTuple = (10, 20, 30, 40)
+        # Your code
+        print(a) # should print 10
+        print(b) # should print 20
+        print(c) # should print 30
+        print(d) # should print 40
+
+1. Swap the following two tuples
+
+    tuple1 = (11, 22)
+    tuple2 = (99, 88)
+
+        Expected output:
+
+        tuple1 = (99, 88)
+        tuple2 = (11, 22)
+
+1. Copy element 44 and 55 from the following tuple into a new tuple
+    
+    tuple1 = (11, 22, 33, 44, 55, 66)
+
+        Expected output:
+
+        tuple2 = (44, 55)
+
+1. Modify the first item (22) of a list inside a following tuple to 222
+    
+    tuple1 = (11, [22, 33], 44, 55)
+
+        Expected output:
+
+        tuple1 = (11, [222, 33], 44, 55)
+
+1. Sort a tuple of tuples by 2nd item
+    
+    tuple1 = (('a', 23),('b', 37),('c', 11), ('d',29))
+
+        Expected output:
+
+        (('c', 11), ('a', 23), ('d', 29), ('b', 37))
+
+1. Counts the number of occurrences of item 50 from a tuple
+    
+    tuple1 = (50, 10, 60, 70, 50)
+
+        Expected output:
+
+        2
+
+1. Check if all items in the following tuple are the same
+    
+    tuple1 = (45, 45, 45, 45)
+
+        Expected output:
+
+        True
 
 ## Dictinary related questions:
 
