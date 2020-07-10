@@ -4,6 +4,10 @@
 
 > Note: Sabhi questions searial wise hain, to kosis karo ki inhe isi serial me solve karo. Good luck
 
+## List questions:
+
+
+
 ## Dictinary related questions:
 
 1. Diye gaye dict me brad ki salary update karke 8500 karni hai:
@@ -163,6 +167,102 @@
         {10}
 
 
+## Python Input and Output Exercise with File Handling 
 
+1. Accept two numbers from the user and calculate multiplication
 
+1. Display “My Name Is James” as “My**Name**Is**James” using output formatting of a print() function
+
+    Expected Output:
+
+    Use print() statement formatting to display ** separator between each word.
+
+    For example: print('My', 'Name', 'Is', 'James') will display MyNameIsJames
+
+    So use one of the formatting argument of print() to turn the output into My**Name**Is**James
+
+1. Convert decimal number to octal using print() output formatting
+
+        Expected Output:
+
+        Display decimal number 8 as 10
+
+1.  Display float number with 2 decimal places using print()
+
+        Expected Output:
+
+        Display 458.541315 as 458.54        
+
+1. Accept list of 5 float numbers as a input from user
+
+        Expected Output:
+
+        Numbers can be any
+
+        [78.6, 78.6, 85.3, 1.2, 3.5]
+
+1.  write all file content into new file by skiping line 5 from following file
+
+        test.txt file:
+
+        line1
+        line2
+        line3
+        line4
+        line5
+        line6
+        line7
+
+        newFile.txt should be
+
+        line1
+        line2
+        line3
+        line4
+        line6
+        line7
+
+1. Accept any three string from one input() call
+
+1. You have the following data.
+
+        totalMoney = 1000
+        quantity = 3
+        price = 450
+
+    display above data using string.format() method
+
+        I have 1000 dollars so I can buy 3 football for 450.00 dollars.
+
+1. How to check file is empty or not
+
+1. Read line number 4 from the following file
+
+                test.txt file:
+
+                line1
+                line2
+                line3
+                line4
+                line5
+                line6
+                line7
+
+1. 
+
+1. 
+
+1. 
+
+1. 
+
+1. 
+
+1. 
+
+1. 
+
+1. 
+
+1. 
 

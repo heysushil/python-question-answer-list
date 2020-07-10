@@ -6,6 +6,10 @@
 
 > Note: Sabhi answer usi sequence me hain jinme questions hai
 
+## List questions:
+
+
+
 ## Dictionary related answers
 
 1. Diye gaye dict me brad ki salary update karke 8500 karni hai:
@@ -160,3 +164,85 @@
         else:
         print("Two sets have items in common")
         print(set1.intersection(set2))
+
+
+## Python Input and Output Exercise with File Handling 
+
+1. Accept two numbers from the user and calculate multiplication
+
+                num1 = int(input("Enter first number "))
+                num2 = int(input("Enter second number "))
+
+                print("\n")
+                res = num1 + num2
+                print("Sum is", res)
+
+1. Display “My Name Is James” as “My**Name**Is**James” using output formatting of a print() function
+
+                print('My', 'Name', 'Is', 'James', sep='**')
+
+1. Convert decimal number to octal using print() output formatting
+
+                print('%o,' % (8))
+
+1.  Display float number with 2 decimal places using print()
+
+                print('%.2f' % 458.541315)
+
+1. Accept list of 5 float numbers as a input from user
+
+                floatNumbers = []
+                n = int(input("Enter the list size : "))
+
+                print("\n")
+                for i in range(0, n):
+                print("Enter number at location", i, ":")
+                item = float(input())
+                floatNumbers.append(item)
+                
+                print("User List is ", floatNumbers)
+
+1.  write all file content into new file by skiping line 5 from following file
+
+                count = 0
+                with open("test.txt", "r") as fp:
+                lines = fp.readlines()
+                count = len(lines)
+                with open("newFile.txt", "w") as fp:
+                for line in lines:
+                        if (count == 3):
+                        count -= 1
+                        continue
+                        else:
+                        fp.write(line)
+                        count-=1
+
+1. Accept any three string from one input() call
+
+                str1, str2, str3 = input("Enter three string").split()
+                print(str1, str2, str3)
+
+                Output:
+
+                Enter three string jhon emma, kelly
+                jhon emma, kelly                
+
+1. You have the following data.
+
+                quantity = 3
+                totalMoney = 1000
+                price = 450
+                statement1 = "I have {1} dollars so I can buy {0} football for {2:.2f} dollars."
+                print(statement1.format(quantity, totalMoney, price))
+
+1. How to check file is empty or not
+
+                import os
+                print(os.stat("test.txt").st_size == 0)        
+
+1. Read line number 4 from the following file
+
+                with open("test.txt", "r") as fp:
+                lines = fp.readlines()
+                print(lines[3])
+        
