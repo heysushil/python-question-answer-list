@@ -16,7 +16,7 @@
 
 1. Concatenate two lists index-wise
 
-Note: We need to use list comprehension and zip() function as follows
+        Note: We need to use list comprehension and zip() function as follows
 
                 list1 = ["M", "na", "i", "Ke"] 
                 list2 = ["y", "me", "s", "lly"]
@@ -47,7 +47,7 @@ Note: We need to use list comprehension and zip() function as follows
 
 1. Remove empty strings from the list of strings
 
-Note: We can use a filter() function to remove None type from the list
+        Note: We can use a filter() function to remove None type from the list
 
 
                 list1 = ["Mike", "", "Emma", "Kelly", "", "Brad"]
@@ -56,7 +56,7 @@ Note: We can use a filter() function to remove None type from the list
 
 1. Add item 7000 after 6000 in the following Python List
 
-Note: Use the append() method
+        Note: Use the append() method
 
                 list1 = [10, 20, [300, 400, [5000, 6000], 500], 30, 40]
                 list1[2][2].append(7000)
@@ -81,7 +81,7 @@ Given List:
 
 1. Given a Python list, remove all occurrence of 20 from the list
 
-Note: Use the list comprehension
+        Note: Use the list comprehension
 
                 list1 = [5, 20, 15, 20, 25, 50, 20]
 
@@ -108,7 +108,7 @@ Note: Use the list comprehension
                 aTuple = (50, )
                 print(aTuple)
 
-Note: If you want to create a single value tuple, you must indicate it by adding a comma just before the closing parentheses.
+        Note: If you want to create a single value tuple, you must indicate it by adding a comma just before the closing parentheses.
 
 1. Unpack the following tuple into 4 variables
 
