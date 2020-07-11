@@ -4,6 +4,36 @@
 
 > Note: Sabhi questions searial wise hain, to kosis karo ki inhe isi serial me solve karo. Good luck
 
+## String Questions:
+
+1. Find all occurrences of “USA” in given string ignoring the case
+
+    Expected Outcome:
+
+    input_str = "Welcome to USA. usa awesome, isn't it?"
+
+    The USA count is: 2
+
+1. Given a string, return the sum and average of the digits that appear in the string, ignoring all other characters
+
+    For Example: –
+
+    sumAndAverage("English = 78 Science = 83 Math = 68 History = 65") = sum 294 Percentage is 73.5
+
+        Output:
+
+        Total Marks is: 294 Percentage is  73.5    
+
+1. Given an input string, count occurrences of all characters within a string
+
+    For Example:
+
+    count("pynativepynvepynative") = {'p': 3, 'y': 3, 'n': 3, 'a': 2, 't': 2, 'i': 2, 'v': 3, 'e': 3}
+
+        Output:
+
+        {'p': 3, 'y': 3, 'n': 3, 'a': 2, 't': 2, 'i': 2, 'v': 3, 'e': 3}
+
 ## List questions:
 
 1. Given a Python list you should be able to display Python list in the following order
@@ -416,3 +446,76 @@ Given List:
                 line5
                 line6
                 line7
+
+## function questions:
+
+1. Given a string of odd length greater 7, return a string made of the middle three chars of a given String.
+
+    For example: –
+
+    getMiddleThreeChars("JhonDipPeta") → "Dip"
+    getMiddleThreeChars("Jasonay") → "son"
+
+        Expected Output:
+
+        Original String is JhonDipPeta
+        Middle three chars are Dip
+        Original String is Jasonay
+        Middle three chars are son
+
+1. Given 2 strings, s1 and s2, create a new string by appending s2 in the middle of s1
+
+    Expected Outcome:
+
+    appendMiddle("Chrisdem", IamNewString) → "ChrIamNewStringisdem"
+
+        Output:
+
+        Original Strings are Chrisdem IamNewString
+        After appending new string in middle ChrIamNewStringisdem    
+
+1. arrange String characters such that lowercase letters should come first
+Given input String of combination of the lower and upper case arrange characters in such a way that all lowercase letters should come first.
+
+    Expected Output:
+
+    input_String = PyNaTive
+
+    arranging characters giving precedence to lowercase letters:
+    yaivePNT
+
+1. Count all lower case, upper case, digits, and special symbols from a given string
+
+        Expected Outcome:
+
+        input_str = "P@#yn26at^&i5ve"
+
+        Total counts of chars, digits,and symbols 
+        Chars = 8 
+        Digits = 3 
+        Symbol = 4
+
+1.  Given two strings, s1 and s2, create a mixed String
+Note: create a third-string made of the first char of s1 then the last char of s2, Next, the second char of s1 and second last char of s2, and so on. Any leftover chars go at the end of the result.
+
+    Expected Outcome:
+
+    Sponsored by Advertising Partner
+    Sponsored Video
+    Watch to learn more
+    SEE MORE
+    mixString("Abc", "Xyz") = AzbycX
+
+1. String characters balance Test
+We’ll say that a String s1 and s2 is balanced if all the chars in the string1 are there in s2. characters position doesn’t matter.
+
+    For Example: –
+
+    stringBalanceCheck(yn, Pynative) = True
+
+        Output:
+
+        s1 and s2 are balanced True
+        s1 and s2 are balanced False
+
+1.         

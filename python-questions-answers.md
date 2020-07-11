@@ -6,6 +6,39 @@
 
 > Note: Sabhi answer usi sequence me hain jinme questions hai
 
+## String Questions:
+
+1. Find all occurrences of “USA” in given string ignoring the case
+
+                inputString = "Welcome to USA. usa awesome, isn't it?"
+                substring = "USA"
+                tempString = inputString.lower()
+                count = tempString.count(substring.lower())
+                print("The USA count is:", count)
+
+1. Given a string, return the sum and average of the digits that appear in the string, ignoring all other characters
+
+                import re
+
+                inputStr = "English = 78 Science = 83 Math = 68 History = 65"
+                markList = [int(num) for num in re.findall(r'\b\d+\b', inputStr)]
+                totalMarks = 0
+                for mark in markList:
+                  totalMarks+=mark
+
+                percentage = totalMarks/len(markList)  
+                print("Total Marks is:", totalMarks, "Percentage is ", percentage)
+
+1. Given an input string, count occurrences of all characters within a string
+
+                inputStr = "pynativepynvepynative"
+                countDict = dict()
+                for char in inputStr:
+                  count = inputStr.count(char)
+                  countDict[char]=count
+                print(countDict)
+
+
 ## List questions:
 
 1. Given a Python list you should be able to display Python list in the following order
@@ -394,3 +427,107 @@ Given List:
                 lines = fp.readlines()
                 print(lines[3])
         
+## Function answers:
+
+1. Given a string of odd length greater 7, return a string made of the middle three chars of a given String
+
+                def getMiddleThreeChars(sampleStr):
+                        middleIndex = int(len(sampleStr) /2)
+                        print("Original String is", sampleStr)
+                        middleThree = sampleStr[middleIndex-1:middleIndex+2]
+                        print("Middle three chars are", middleThree)
+                
+                getMiddleThreeChars("JhonDipPeta")
+                getMiddleThreeChars("Jasonay")                
+
+1. Given 2 strings, s1 and s2, create a new string by appending s2 in the middle of s1
+
+                def appendMiddle(s1, s2):
+                        middleIndex = int(len(s1) /2)
+                        print("Original Strings are", s1, s2)
+                        middleThree = s1[:middleIndex-1:]+ s2 +s1[middleIndex-1:]
+                        print("After appending new string in middle", middleThree)
+                
+                appendMiddle("Chrisdem", "IamNewString")
+
+1. arrange String characters such that lowercase letters should come first
+Given input String of combination of the lower and upper case arrange characters in such a way that all lowercase letters should come first.
+
+                inputStr = "PyNaTive"
+                words = inputStr.split()
+                lower = []
+                upper = []
+                for char in inputStr:
+                        if char.islower():
+                                lower.append(char)
+                        else:
+                                upper.append(char)
+                sortedString = ''.join(lower + upper)
+                print("\n arranging characters giving precedence to lowercase letters:")
+                print(sortedString)
+
+1. Count all lower case, upper case, digits, and special symbols from a given string
+
+                def findDigitsCharsSymbols(inputString):
+                        words = inputString.split()
+                        charCount = 0
+                        digitCount = 0
+                        symbolCount = 0
+                        for char in inputString:
+                                if char.islower() or char.isupper():
+                                        charCount+=1
+                                elif char.isnumeric():
+                                        digitCount+=1
+                                else:
+                                        symbolCount+=1
+                        
+                        print("Chars = ", charCount, "Digits = ", digitCount, "Symbol = ", symbolCount)
+                
+                inputString = "P@#yn26at^&i5ve"
+                print("total counts of chars, digits,and symbols \n")
+
+                findDigitsCharsSymbols(inputString)
+
+1.  Given two strings, s1 and s2, create a mixed String
+Note: create a third-string made of the first char of s1 then the last char of s2, Next, the second char of s1 and second last char of s2, and so on. Any leftover chars go at the end of the result.
+
+                def mixString(s1, s2):
+                  s2 = s2[::-1]
+                  lengthS1 = len(s1)
+                  lengthS2 = len(s2)
+                  length  = lengthS1 if lengthS1 > lengthS2 else lengthS2 
+                  resultString=""
+                  for i in range(length):
+                    if(i < lengthS1):
+                      resultString = resultString + s1[i]
+                    if(i < lengthS2):
+                      resultString = resultString + s2[i]
+
+                  print(resultString)
+
+                s1 = "Abc"
+                s2 = "Xyz"
+                mixString(s1, s2)
+
+1. String characters balance Test
+We’ll say that a String s1 and s2 is balanced if all the chars in the string1 are there in s2. characters position doesn’t matter.
+
+                def stringBalanceCheck(s1, s2):
+                  flag = True
+                  for char in s1:
+                    if char in s2:
+                      continue
+                    else:
+                      flag = False
+                  return flag
+
+                s1 = "yn"
+                s2 = "Pynative"
+                flag = stringBalanceCheck(s1, s2)
+                print("s1 and s2 are balanced", flag)
+
+                s1 = "ynf"
+                s2 = "Pynative"
+                flag = stringBalanceCheck(s1, s2)
+                print("s1 and s2 are balanced", flag)
+
